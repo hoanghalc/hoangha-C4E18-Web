@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mua dong khong lanh</title>
+</head>
+<body>
+    <h1>Search Page</h1>
+    {% for service in all_service %}
+        <div>
+            {% if service.gender == 0%}
+                <img src="../static/image/female-profile.jpg" alt="">
+            {% else %}
+                <img src="../static/image/male-profile.jpg" alt="">    
+            {% endif %}    
+            <p>Ten: {{ service.name }}</p>
+            <p>Gioi tinh: {{service.gender}}</p>
+            <p>Chieu cao: {{ service.height }}</p>
+            <p>Yob: {{ service.yob }}</p>
+            <p>Dia chi: {{ service.address }}</p>
+            <hr>
+        </div>        
+    {% endfor %}
+
+</body>
+</html>

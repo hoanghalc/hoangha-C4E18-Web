@@ -1,0 +1,2 @@
+1. Không có ID trùng nhau trong database. Bởi mỗi ID tượng trưng cho một doc trong collection.
+2. Thông tin về ID là để phân biệt các doc với giá trị dữ liệu khác nhau, điều này giúp cho việc tương tác với các docs không gây tình trạng trùng hay nhầm lẫn.

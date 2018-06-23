@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mùa Đông Không Lạnh</title>
+</head>
+<body>
+    <h1>Customer List</h1>
+        {% for customer in ten_customer %}
+            <div>
+                <p>Name : {{ customer.name }}</p>
+                <p>Email : {{ customer.email }}</p>
+                <p>Phone number : {{ customer.phone }}</p>
+                <p> Job : {{ customer.job }}</p>
+                <p>Company : {{ customer.company }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+</body>
+</html>
