@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+</head>
+<body>
+    <h1>This is Adminstration</h1>
+    <table border="1px">
+        <thead>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Yob</th>
+            <th>Gioi tinh</th>
+            <th>Chieu cao</th>
+            <th>So dien thoai</th>
+            <th>Dia chi</th>
+            <th>Trang thai</th>
+            <th></th>
+        </thead>
+        <tbody>
+            {% for service in all_service %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td>{{service.name}}</td>
+                    <td>{{service.yob}}</td>
+                    {% if service.gender ==1 %}
+                        <td>Nam</td>
+                    {% else %}
+                        <td>Nu</td>
+                    {%endif%}
+                    <td>{{service.height}}</td>
+                    <td>{{service.phone}}</td>
+                    <td>{{service.address}}</td>
+                    <td>
+                        {{ "Ranh" if service.status else "Ban" }}
+                    </td>       
+                    <td>
+                        <a href="{{url_for('delete',service_id = service.id )}}">Xoa</a>  
+                        <a href="{{url_for('new_service',new_service=new_service)}}">Thêm</a>
+                        <a href="{{url_for('update',service_id = service.id )}}">Sửa</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            <!-- emmet: ky hieu the * so luong the muon tao -->
+        
+        </tbody>
+
+
+    </table>
+</body>
+</html>

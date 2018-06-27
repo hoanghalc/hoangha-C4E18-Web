@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service Information</title>
+</head>
+<body>
+        <div>
+                {% if service_to_find.gender == 0%}
+                    <img src="../static/img9650-1529861031477758522403.jpg" alt="">
+                {% else %}
+                    <img src="../static/img9713-15298611030951739907714.jpg" alt="">    
+                {% endif %}    
+                <p>Ten: {{ service_to_find.name }}</p>
+                <p>Gioi tinh: {{service_to_find.gender}}</p>
+                <p>Chieu cao: {{ service_to_find.height }}</p>
+                <p>Yob: {{ service_to_find.yob }}</p>
+                <p>Dac diem: {{ service_to_find.description }}</p>
+                <p>So do 3 vong: {{ service_to_find.measurement }} </p>
+                <hr>
+        </div>
+</body>
+</html>

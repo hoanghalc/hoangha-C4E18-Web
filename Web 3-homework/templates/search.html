@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service information</title>
+</head>
+<body>
+        <h1>Search Page</h1>
+        {% for service in all_service %}
+            <div>
+                {% if service.gender == 0%}
+                    <img src="../static/img9650-1529861031477758522403.jpg" alt="">
+                {% else %}
+                    <img src="../static/img9713-15298611030951739907714.jpg" alt="">    
+                {% endif %}    
+                <p>Ten: {{ service.name }}</p>
+                <p>Gioi tinh: {{service.gender}}</p>
+                <p>Chieu cao: {{ service.height }}</p>
+                <p>Yob: {{ service.yob }}</p>
+                <p>Dac diem: {{ service.description }}</p>
+                <p>So do 3 vong: {{ service.measurement }} </p>
+                <a href="{{url_for('detail',service_id = service.id)}}">Chi tiet</a>
+                <hr>
+            </div>        
+        {% endfor %}
+</body>
+</html>

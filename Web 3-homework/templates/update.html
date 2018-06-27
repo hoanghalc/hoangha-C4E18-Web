@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Service</title>
+</head>
+<body>
+        <h1>Service update page</h1>
+            {% if service_to_update.gender == 0%}
+                <img src="../static/img9650-1529861031477758522403.jpg" alt="">
+            {% else %}
+                <img src="../static/img9713-15298611030951739907714.jpg" alt="">    
+            {% endif %}    
+        <form method="post">
+          <label>Name:</label>
+          <br>
+          <input type="text" name="name" value="{{ service_to_update.name }}">
+          <br>
+    
+          <label>Yob:</label>
+          <br>
+          <input type="text" name="yob" value="{{ service_to_update.yob }}">
+          <br>
+    
+          <label>Gender:</label>
+        <br>
+        {% if service_to_update.gender == 0 %}
+            <label><input type="radio" name="gender" value="1">Male</label>
+
+            <label><input type="radio" name="gender" value="0" checked>Female</label>
+        {% else %}
+            <label><input type="radio" name="gender" value="1" checked>Male</label>
+
+            <label><input type="radio" name="gender" value="0" >Female</label>
+        {% endif %}
+          <br>
+    
+          <label>Height:</label>
+          <br>
+          <input type="text" name="height" value="{{ service_to_update.height }}">
+          <br>
+    
+          <label>Phone:</label>
+          <br>
+          <input type="text" name="phone" value="{{ service_to_update.phone }}">
+          <br>
+    
+          <label>Description:</label>
+          <br>
+          <input type="text" name="description" value="{{ service_to_update.description }}">
+          <br>
+    
+          <label>Measurement:</label>
+          <br>
+          <input type="text" name="measurement" value="{{ service_to_update.measurement }}">
+          <br>
+    
+          <button type="submit">cap nhat</button>
+
+    
+        </form>
+</body>
+</html>
