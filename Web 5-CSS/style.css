@@ -1,0 +1,83 @@
+.text-success{
+    color: green;   
+}
+
+.text-center{
+    text-align: center;
+}
+
+.w-200px{
+    width: 200px;
+    
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.bg-blue{
+    background-color: dodgerblue;
+}
+
+.bg-light{
+    background-color: lightgreen;
+}
+
+.bg lightgreen{
+    background-color: lightgreen;
+}
+
+.d-inlineblock{
+    display: inline-block;
+}
+
+#box-model{
+    border: 3px solid brown;
+    margin: 10px 30px ;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.h-50px{
+    height: 50px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-59{
+    width: 59%;
+}
+
+.h-1000px{
+    height: 1000px;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.box-border{
+    border: 1px solid lightgreen;
+}
+
+.h-300px{
+    height: 300px;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+.w-50px{
+    width: 50px;
+}
+

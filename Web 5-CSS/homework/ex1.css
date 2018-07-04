@@ -1,0 +1,77 @@
+
+.bg {
+    height: 250px;
+}
+
+.bg-ele {
+    background-image: url("../homework/statics/background.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+
+}
+
+#flex-box1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110px;
+}
+
+
+.image-1 {
+    background-image: url("../homework/statics/tuananh.jpg");
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover
+}
+.image-2 {
+    background-image: url("../homework/statics/duy.jpg");
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover
+}
+.image-3 {
+    background-image: url("../homework/statics/dinhquy.jpg");
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover
+}
+
+
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70px;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 90px;
+    color: white;
+    
+}
+
+.name {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.color {
+    color: red;
+}
