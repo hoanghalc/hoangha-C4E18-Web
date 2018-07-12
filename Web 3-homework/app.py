@@ -6,6 +6,9 @@ app = Flask(__name__)
 #0. Connect to the Database
 mlab.connect()
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/search')
 def search():
@@ -68,6 +71,10 @@ def update(service_id):
         service_to_update.reload()
         return redirect(url_for('admin'))    
 
+@app.route('/find/<gender>')
+def find(gender):
+    service_gender = Service.objects(gender=gender)
+    return render_template('find.html',service_gender=service_gender)
 
 if __name__ == '__main__':
   app.run(debug=True)
